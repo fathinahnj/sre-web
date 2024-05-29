@@ -13,29 +13,31 @@
 </head>
 
 <body>
+  <!-- naf ubah tag <p> jadi <a> supaya bisa dimasukkan link-->
   <header>
     <nav class="navbar">
       <img src="/image/SRE Unhas (Green).png" alt="">
       <div class="navbar-item">
-        <p class="item" id="#">Home</p>
-        <p class="item" id="#">Profile</p>
-        <p class="item" id="#">SICLUS</p>
-        <p class="item" id="#">Contact Us</p>
+        <a href="#home" class="item">Home</a>
+        <a href="#profile" class="item">Profile</a>
+        <a href="#siclus" class="item">SICLUS</a>
+        <a href="#contact" class="item">Contact Us</a>
       </div>
     </nav>
   </header>
 
+  <!-- tiap section diberi id (naf)-->
   <main>
-    <section class="home">
+    <section id="home" class="home">
       <div class="title">
         <h1 id="welcome">Welcome, <br>Energizen!</h1>
       </div>
       <div class="cover">
-        <img src="image\DSC03764-copy.JPG">
+        <img src="image\DSC03764-copy.JPG" height="3862" width="2172">    
       </div>
     </section>
 
-    <section class="profile">
+    <section id="profile" class="profile">
       <div>
         <img class="carousel" src="image\Rectangle 4.png">
       </div>
@@ -43,8 +45,7 @@
         <p class="title" id="profile-title">Who are we?</p>
         <p class="desc" id="profile-desc">Society of Renewable Energy Indonesia Chapter Universitas Hasanuddin (SRE UNHAS) is a student-led organization based in Universitas Hasanuddin which concerns about new and renewable energy and committed to advancing new and renewable energy in Indonesia. </p>
         <div class="fcc">
-          <button class="button" id="comp-btn1" style="margin: 20px;">Visit Us</button>
-        </div>
+          <button class="button" id="comp-btn1" style="margin: 20px;" onclick="window.open('https://www.instagram.com/sreunhas/', '_blank')">Visit Us</button>        </div>
       </div>
     </section>
 
@@ -60,7 +61,9 @@
               <p class="act-desc">We built solar panels and learn about renewable energy together.</p>  
             </div>
             <div class="fcc">
-              <button class="button" id="act-btn">See More</button>
+              <a href="https://www.instagram.com/p/CuEK2rnyu7k" target="_blank">
+                <button class="button" id="act-btn">See More</button>
+              </a>
             </div>
           </div>
         </div>
@@ -74,7 +77,9 @@
               <p class="act-desc">We attended a discussion forum with professionals in the field.</p>  
             </div>
             <div class="fcc">
-              <button class="button" id="act-btn">See More</button>
+              <a href="https://www.instagram.com/p/C3BzUIPvXY7" target="_blank">
+                <button class="button" id="act-btn">See More</button>
+              </a>
             </div>
           </div>
         </div>
@@ -89,7 +94,9 @@
               <p class="act-desc">We paid a visit to one the biggest wind power plant in Indonesia.</p>  
             </div>
             <div class="fcc">
-              <button class="button" id="act-btn">See More</button>
+              <a href="https://www.instagram.com/p/CziqZUYS0Kh" target="_blank">
+                <button class="button" id="act-btn">See More</button>
+              </a>
             </div>
           </div>
         </div>
@@ -103,7 +110,9 @@
               <p class="act-desc">We were involved in joint project aimed at mapping the potential of RE.</p>  
             </div>
             <div class="fcc">
-              <button class="button" id="act-btn">See More</button>
+              <a href="https://www.instagram.com/p/Cxm0-daOnLV" target="_blank">
+                <button class="button" id="act-btn">See More</button>
+              </a>
             </div>
           </div>
         </div>
@@ -111,14 +120,14 @@
 
     <!-- <p class="title">SICLUS is Here!</p> -->
     <!-- <p class="title" id="siclus-title">We proudly announce...</p> -->
-    <section class="siclus">
+    <section id="siclus" class="siclus">
       <div id="noncarousel">
         <div id="siclus-isi">
           <p class="title" id="siclus-title2">SICLUS 2024 is here!</p>
           <p class="desc" id="siclus-desc">SICLUS or the Student Innovation Competition in Climate, Energy, and Sustainability is an annual event organized by the Society of Renewable Energy (SRE) at Universitas Hasanuddin aimed at promoting awareness of climate issues and their solutions to the public, particularly high school and university students. Interested to know more? </p>
         </div>
         <div>
-          <button class="button" id="siclus-btn">Visit Us</button>
+          <button class="button" id="siclus-btn" onclick="window.open('https://www.instagram.com/siclus2024/', '_blank')">Visit Us</button>
         </div>
       </div>
       <div>
@@ -128,7 +137,7 @@
 
   <section class="register">
     <div class="competition">
-    <div class="comp-title">
+    <div class="comp-title Innovation">
       <p><strong>Innovation Paper<br></strong></p>
     </div>
         <li class="desc" id="comp-desc">Open Registration & Abstract Submission (June 3-17, 2024)</li>
@@ -138,8 +147,12 @@
         <li class="desc" id="comp-desc">Top 10 Announcement (August 10, 2024)</li>
         <li class="desc" id="comp-desc">Technical Meeting (August 24, 2024)</li>
         <li class="desc" id="comp-desc">Final Presentation (September 21, 2024)</li>
-        <button class="button" id="comp-btn1" style="margin-top: 63px;">See Guidebook</button>
-        <button class="button" id="comp-btn2">Register Now</button>
+        <a href="https://drive.google.com/drive/folders/1-HB7UvUamQjlImvLgGgjoloiFxx0kIjN">
+          <button class="button" id="comp-btn1" style="margin-top: 63px;">See Guidebook</button>
+        </a>
+        <a href="Registrasi/innovation.html">
+          <button class="button" id="comp-btn2">Register Now</button>
+        </a>
     </div>
 
     <div class="competition">
@@ -154,8 +167,12 @@
         <li class="desc" id="comp-desc">Final Stage - Case 3 (August 10-16, 2024)</li>
         <li class="desc" id="comp-desc">Technical Meeting (August 24, 2024)</li>
         <li class="desc" id="comp-desc">Final Presentation (September 21, 2024)</li>
-        <button class="button" id="comp-btn1">See Guidebook</button>
-        <button class="button" id="comp-btn2">Register Now</button>
+        <a href="https://drive.google.com/drive/folders/1-5y2SQHApMJYFoaTyxDjMuJFIzHvSrFd">
+          <button class="button" id="comp-btn1">See Guidebook</button>
+        </a>
+        <a href="Registrasi/Study.html">
+          <button class="button" id="comp-btn2">Register Now</button>
+        </a>
     </div>
 
     <div class="competition">
@@ -165,8 +182,12 @@
         <li class="desc" id="comp-desc">Open Registration & Photo Submission (June 3 - July 20, 2024)</li>
         <li class="desc" id="comp-desc">Top 10 Announcement (August 10, 2024)</li>
         <li class="desc" id="comp-desc">Exhibition Day (September 21, 2024)</li>
-        <button class="button" id="comp-btn1" style="margin-top: 252px;">See Guidebook</button>
-        <button class="button" id="comp-btn2">Register Now</button>
+        <a href="https://drive.google.com/drive/folders/1-8nbtYndH6L6ZJgHKufvxnYieRO-9hFY">
+          <button class="button" id="comp-btn1" style="margin-top: 252px;">See Guidebook</button> 
+        </a>
+        <a href="Registrasi/Photograph.html">
+          <button class="button" id="comp-btn2">Register Now</button>
+        </a>
     </div>
   </section>
 
@@ -181,7 +202,7 @@
     </div>
   </section>
 
-  <section class="contact-us">
+  <section id="contact" class="contact-us">
     <div>
       <img id="logo-sre" src="image\SRE Unhas (white).png"> 
     </div>
@@ -190,26 +211,32 @@
       <div class="contact">
         <img src="image\gmail-svgrepo-com.svg">
         <div class="account">
-          <p>sreunhas@gmail.com</p>
-          <p>siclus2024@sreunhas.id</p>
+          <a href="mailto:sreunhas@gmail.com">sreunhas@gmail.com</a>
+          <a href="mailto:siclus2024@sreunhas.id">siclus2024@sreunhas.id</a>
         </div>
         <img src="image\instagram-logo-facebook-2-svgrepo-com.svg">
         <div class="account">
-          <p>@sreunhas</p>
-          <p>@siclus2024</p>
+          <a href="https://www.instagram.com/sreunhas" target="_blank">@sreunhas</a>
+          <a href="https://www.instagram.com/siclus2024" target="_blank">@siclus2024</a>
         </div>
         <img src="image\whatsapp-svgrepo-com.svg">
-        <div class="account">
-          <p>081234567890 (Saya)</p>
-          <p>081234567890 (Aku)</p>
+        <div class="account WhatsApp">
+          <a href="https://wa.me/6281234567890">081234567890 (Saya)</a>
+          <a href="https://wa.me/6281234567890">081234567890 (Aku)</a>
         </div>
         <img src="image\linkedin-svgrepo-com (2).svg">
-        <div class="account">
-          <p>Society of Renewable Energy</p>
-          <p>Universitas Hasanuddin</p>
+        <div class="account linkedIn">
+        <a href="https://www.linkedin.com/company/sreunhas/" target="_blank">Society of Renewable Energy
+          <br>Universitas Hasanuddin</a>
         </div>
       </div>
-    </div>
   </section>
   </main>
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- js -->
+  <script src="script.js"></script>
+
 </body>

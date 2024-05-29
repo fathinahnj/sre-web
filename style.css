@@ -6,6 +6,45 @@
   padding: 0;
 }
 
+/* naf ubah sini */
+.navbar-item a {
+  text-decoration: none;
+}
+
+a{
+  font-family: 'open sauce one', sans-serif;
+}
+  
+.account a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.competition a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.activity a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.account a:hover {
+  color: #ff6347;
+}
+
+.account {
+  height: 35px; /* Atur tinggi sesuai kebutuhan */
+  overflow: hidden; /* Sembunyikan teks yang melebihi tinggi */
+}
+
+.account a {
+  padding-top: 3px; /* Atur jarak sesuai kebutuhan */
+}
+
+/* sampai sini (naf) */
+
 p{
   font-family: 'open sauce one', sans-serif;
 }
@@ -410,3 +449,16 @@ p{
   height: 40px;
   font-size: 10px;
 }
+
+/* Media Queries */
+
+/* Laptop */
+
+@media (max-width : 1366px){
+
+}
+
+/* Tablet */
+
+
+/* Mobile */
